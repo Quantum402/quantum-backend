@@ -1,0 +1,22 @@
+{
+  "name": "quantum402-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Quantum402 backend: invoice → wallet sign → gateway-signed x402 receipt (Solana + EVM)",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "node server/index.js",
+    "start": "NODE_ENV=production node server/index.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "bs58": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.12.1",
+    "express": "^4.19.2",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "tweetnacl": "^1.0.3"
+  }
+}
